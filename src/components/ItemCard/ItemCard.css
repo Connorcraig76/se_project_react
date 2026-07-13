@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  width: 323px;
+  width: 100%;
+  max-width: 323px;
 }
 
 .card__name {

@@ -20,9 +20,12 @@
   margin: 0;
 }
 
-.header__add-clothes-btn {
+.header__bottons {
+  display: flex;
   margin: 0 20px 0 auto;
+}
 
+.header__bottons_type_add-clothes {
   border-style: none;
 
   font-weight: 700;
@@ -38,4 +41,9 @@
 
 .header__username {
   margin: 0;
+}
+
+.header__nav-link {
+  color: #000;
+  text-decoration: none;
 }
