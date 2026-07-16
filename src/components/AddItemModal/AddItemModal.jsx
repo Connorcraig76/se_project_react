@@ -1,4 +1,5 @@
 import { useForm } from "../../hooks/useForm.js";
+import { useEffect } from "react";
 import ModalWithForm from "../ModalWithForm/ModalWithForm.jsx";
 
 const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
@@ -8,7 +9,10 @@ const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
     weatherType: "",
   };
 
-  const { values, handleChange } = useForm(defaultValues);
+  const { values, handleChange, setValues } = useForm(defaultValues);
+  useEffect(() => {
+    if (isOpen) setValues(defaultValues);
+  }, [isOpen]);
 
   function handleSubmit(evt) {
     evt.preventDefault();

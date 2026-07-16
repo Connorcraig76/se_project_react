@@ -17,6 +17,7 @@
   border: none;
   padding: 0;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .clothes-section__items {
@@ -25,4 +26,5 @@
   grid-auto-rows: repeat(auto-fit, 283px);
   grid-gap: 21px;
   padding: 0;
+  cursor: pointer;
 }

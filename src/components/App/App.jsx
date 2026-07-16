@@ -72,8 +72,8 @@ function App() {
   useEffect(() => {
     getWeather(coordinates, apiKey)
       .then((data) => {
-        const filterData = filterWeatherData(data);
-        setWeatherData(filterData);
+        const filteredData = filterWeatherData(data);
+        setWeatherData(filteredData);
       })
       .catch(console.error);
 
@@ -106,8 +106,9 @@ function App() {
               path="/profile"
               element={
                 <Profile
-                  OnCardClick={handleCardClick}
+                  onCardClick={handleCardClick}
                   clothingItems={clothingItems}
+                  handleAddClick={handleAddClick}
                 />
               }
             />

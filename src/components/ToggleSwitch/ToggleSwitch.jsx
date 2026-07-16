@@ -13,6 +13,7 @@ export default function ToggleSwitch() {
         onChange={handleToggleSwitchChange}
         type="checkbox"
         className="toggle-switch__checkbox"
+        checked={currentTemperatureUnit === "C"}
       />
       <div className="toggle-switch__slider"></div>
       <span
